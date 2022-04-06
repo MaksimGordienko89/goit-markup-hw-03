@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 :root {
   --main-color: #212121;
   --accent-color: #2196f3;
@@ -23,7 +31,6 @@ ol {
   padding-left: 0;
 }
 body {
-  margin: 0;
   font-family: Roboto, sans-serif;
   color: var(--main-color);
   background-color: var(--main-lite-color);
@@ -34,6 +41,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 .list {
   list-style: none;
@@ -52,8 +60,8 @@ body {
 }
 /* HEADER */
 .header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .web-color {
   font-family: "Raleway", sans-serif;
@@ -62,6 +70,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+.list-item {
 }
 .logo {
   list-style: none;
@@ -112,8 +122,7 @@ body {
   background-color: var(--section-background-color);
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
 }
 .main-title {
   font-weight: 900;
@@ -123,6 +132,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-lite-color);
+  padding-top: 200px;
 }
 .btn-main {
   cursor: pointer;
@@ -131,7 +141,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -139,6 +149,10 @@ body {
   background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
+  padding: 10px 32px;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  margin-left: 500px;
 }
 .btn-main:hover {
   background-color: var(--btn-hover-color);
@@ -173,20 +187,26 @@ body {
   background-color: var(--accent-color);
 }
 /* section */
+.advantage-list {
+  margin-top: 94px;
+}
 .slogan {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .text {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  max-width: 270px;
 }
 .our-team {
   background-color: var(--btn-filter-background-color);
+  margin-top: 94px;
 }
 .card-personal {
   background-color: var(--main-lite-color);
@@ -196,12 +216,26 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  margin-left: 412px;
+  margin-bottom: 50px;
+}
+.title-our-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  margin-left: 468px;
+  margin-bottom: 50px;
+  margin-top: 94px;
+  padding-top: 94px;
 }
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .profesion {
   font-weight: 400;
