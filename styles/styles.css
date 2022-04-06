@@ -41,10 +41,23 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 .list {
   list-style: none;
+}
+.list:not(:last-child) {
+  margin-right: 50px;
+}
+.nav {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.nav .list-nav + .list-nav {
+  margin-left: 50px;
+}
+.naiv-nav {
+  display: flex;
 }
 .visually-hidden {
   position: absolute;
@@ -72,6 +85,9 @@ body {
   color: var(--accent-color);
 }
 .list-item {
+  display: flex;
+  margin-left: 93px;
+  margin-right: 331px;
 }
 .logo {
   list-style: none;
@@ -98,6 +114,7 @@ body {
   color: var(--accent-color);
 }
 .link {
+  display: block;
   list-style: none;
   text-decoration: none;
   font-weight: 500;
@@ -257,6 +274,9 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-lite-color);
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: inline-block;
 }
 .adress {
   list-style: none;
@@ -266,6 +286,7 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-lite-color);
+  margin-bottom: 9px;
 }
 .footer-mail,
 .footer-tel {
@@ -276,6 +297,10 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
+}
+.footer-tel {
+  margin-bottom: 60px;
 }
 /* PORTFOLIO_FILTER */
 .filter-title {
