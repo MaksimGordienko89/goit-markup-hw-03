@@ -48,16 +48,6 @@ body {
 .list:not(:last-child) {
   margin-right: 50px;
 }
-/* Line
-
-position: absolute;
-width: 1600px;
-height: 0px;
-left: 0px;
-top: 80px;
-
-border: 1px solid #ececec; */
-
 .nav {
   display: flex;
   list-style: none;
@@ -85,6 +75,7 @@ border: 1px solid #ececec; */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .web-color {
   font-family: "Raleway", sans-serif;
@@ -200,6 +191,7 @@ border: 1px solid #ececec; */
   background-color: var(--btn-filter-background-color);
   border: none;
   border-radius: 4px;
+  padding: 6px 22px 6px 22px;
 }
 .btn-filter:hover {
   color: var(--main-lite-color);
@@ -344,4 +336,15 @@ footer {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+.list-filter {
+  display: flex;
+  margin-bottom: 88px;
+  justify-content: center;
+}
+.list-filter .list-filter-item + .list-filter-item {
+  margin-left: 8px;
+}
+.list-filter-item {
+  list-style: none;
 }
