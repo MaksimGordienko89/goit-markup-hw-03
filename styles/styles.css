@@ -37,7 +37,7 @@ body {
   font-size: 14px;
 }
 .conteiner {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -48,6 +48,16 @@ body {
 .list:not(:last-child) {
   margin-right: 50px;
 }
+/* Line
+
+position: absolute;
+width: 1600px;
+height: 0px;
+left: 0px;
+top: 80px;
+
+border: 1px solid #ececec; */
+
 .nav {
   display: flex;
   list-style: none;
@@ -206,6 +216,7 @@ body {
 /* section */
 .advantage-list {
   margin-top: 94px;
+  display: flex;
 }
 .slogan {
   font-weight: 700;
@@ -219,11 +230,25 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  max-width: 270px;
+  min-width: 270px;
+}
+.list-images {
+  display: flex;
+  justify-content: center;
+}
+.list-images-item {
+  list-style: none;
+}
+.list-images .list-images-item + .list-images-item {
+  margin-left: 30px;
 }
 .our-team {
   background-color: var(--btn-filter-background-color);
   margin-top: 94px;
+  min-height: 648px;
+}
+.list-cards {
+  display: flex;
 }
 .card-personal {
   background-color: var(--main-lite-color);
@@ -253,6 +278,7 @@ body {
   letter-spacing: 0.03em;
   margin-top: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .profesion {
   font-weight: 400;
@@ -260,10 +286,12 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  text-align: center;
 }
 /* FOOTER */
 footer {
   background-color: #2f303a;
+  min-height: 252px;
 }
 .footer-logo {
   text-decoration: none;
@@ -286,7 +314,11 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-lite-color);
-  margin-bottom: 9px;
+}
+.list-adress {
+  display: block;
+  list-style: none;
+  margin-top: 9px;
 }
 .footer-mail,
 .footer-tel {
@@ -297,10 +329,8 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
 }
-.footer-tel {
-  margin-bottom: 60px;
+.footer-mail {
 }
 /* PORTFOLIO_FILTER */
 .filter-title {
