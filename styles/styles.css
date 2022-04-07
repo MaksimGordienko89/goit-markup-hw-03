@@ -279,6 +279,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   text-align: center;
+  padding-bottom: 30px;
 }
 /* FOOTER */
 footer {
@@ -330,12 +331,17 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  padding-left: 24px;
 }
 .filter-subtitle {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 20px;
+  padding-left: 24px;
 }
 .list-filter {
   display: flex;
@@ -347,4 +353,23 @@ footer {
 }
 .list-filter-item {
   list-style: none;
+}
+.filter-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+}
+.list-filter-cards {
+  list-style: none;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.list-filter-cards:nth-child(3n) {
+  margin-right: 0;
+}
+.list-filter-cards:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
