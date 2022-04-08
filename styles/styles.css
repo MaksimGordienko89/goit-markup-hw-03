@@ -37,7 +37,7 @@ body {
   font-size: 14px;
 }
 .conteiner {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -72,7 +72,6 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-/* HEADER */
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -90,6 +89,12 @@ body {
   display: flex;
   margin-left: 93px;
   margin-right: 331px;
+}
+.list-pages {
+  list-style: none;
+}
+.list-pages:not(:last-child) {
+  margin-right: 50px;
 }
 .logo {
   list-style: none;
@@ -136,7 +141,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-/* MAIN */
 .hero {
   background-color: var(--section-background-color);
 }
@@ -206,7 +210,6 @@ body {
   color: var(--main-lite-color);
   background-color: var(--accent-color);
 }
-/* section */
 .advantage-list {
   margin-top: 94px;
   display: flex;
@@ -292,7 +295,6 @@ body {
   min-width: 270px;
   margin-right: 0;
 }
-/* FOOTER */
 footer {
   background-color: #2f303a;
   min-height: 252px;
@@ -334,9 +336,6 @@ footer {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-mail {
-}
-/* PORTFOLIO_FILTER */
 .filter-title {
   font-weight: 700;
   font-size: 18px;
@@ -377,6 +376,7 @@ footer {
   box-sizing: border-box;
   margin-right: 30px;
   margin-bottom: 30px;
+  max-width: 370px;
 }
 .list-filter-cards:nth-child(3n) {
   margin-right: 0;
