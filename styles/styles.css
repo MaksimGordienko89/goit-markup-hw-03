@@ -371,9 +371,18 @@ footer {
 .list-filter-cards {
   list-style: none;
   background: #ffffff;
+  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  width: 370px;
+}
+.about-filter {
+  border-left: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-right: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding: 20px 24px;
 }
 .list-filter-cards:nth-child(3n) {
   margin-right: 0;
