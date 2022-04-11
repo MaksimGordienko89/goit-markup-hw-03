@@ -262,14 +262,7 @@ img {
   max-width: 270px;
   width: calc(100%);
 }
-.title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  text-align: center;
-}
+.title,
 .title-our-team {
   font-weight: 700;
   font-size: 36px;
@@ -327,7 +320,7 @@ footer {
   list-style: none;
   margin-top: 9px;
 }
-.footer-list-adress {
+.footer-adress {
   margin-top: 0;
 }
 .footer-mail,
