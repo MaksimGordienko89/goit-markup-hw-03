@@ -47,8 +47,7 @@ img {
 }
 .list {
   list-style: none;
-  max-width: 270px;
-  margin-bottom: -94px;
+  width: 270px;
 }
 .list:not(:last-child) {
   margin-right: 30px;
@@ -284,6 +283,7 @@ img {
 .profesion {
   font-weight: 400;
   color: var(--text-color);
+  margin-bottom: 0;
 }
 .about {
   padding-top: 30px;
@@ -370,11 +370,8 @@ footer {
 }
 .about-filter {
   border-left: 1px solid #eeeeee;
-  box-sizing: border-box;
   border-right: 1px solid #eeeeee;
-  box-sizing: border-box;
   border-bottom: 1px solid #eeeeee;
-  box-sizing: border-box;
   padding: 20px 24px;
 }
 .list-filter-cards:nth-child(3n) {
